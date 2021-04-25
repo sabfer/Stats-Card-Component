@@ -12,10 +12,11 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
-  font-size: 62.5;
+  font-size: 62.5%;
 }
 
 body {
@@ -32,9 +33,33 @@ body {
   width: 90%;
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   background-color: var(--Card-Background);
 }
+
+.card--information {
+  padding: 2rem 2rem;
+  text-align: center;
+}
+
+.card--information_title {
+  margin-bottom: 2rem;
+  font-family: var(--Inter);
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.card--information_title span {
+  color: var(--Highlights)
+}
+
+.card--information_text {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: var(--Lexend-Deca);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
 
 .card--image {
   order: -1;
@@ -42,26 +67,15 @@ body {
 
 .card--image img {
   width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ------------- Frontend Mentor CSS ------------- */
 
 .attribution { 
+  font-family: var(--Lexend-Deca);
+  margin-top: 50px;
   font-size: 11px; 
   text-align: center; 
 }
