@@ -3,20 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="./assets/index.css">
   <title>Frontend Mentor | Stats preview card component</title>
 </head>
 <body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
+  <section class="card--container">
+    <article class="card--information">
+      <h1 class="card--information_title">Get insights that help your business grow.</h1>
+      <p class="card--information_text">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+      <div class="card-statistics">
+        <div class="card-statistics_companies">
+          10k+ companies
+        </div>
+        <div class="card-statistics_templates">
+          314 templates
+        </div>
+        <div class="card-statistics_queries">
+          12m+ queries
+        </div>
+      </div>    
+    </article>
+    <picture class="card--image">
+      <source media="(max-width: 375px)" srcset="./assets/image-header-mobile.jpg">
+      <source media="(min-width: 1024px)" srcset="./assets/image-header-desktop.jpg">
+      <img src="./assets/image-header-mobile.jpg" alt="">
+    </picture>
+  </section>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
